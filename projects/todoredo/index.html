@@ -110,7 +110,7 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        Screenshot
       </a>
     </h1>
     <div class="entry-meta">
@@ -118,7 +118,13 @@
     </div>
   </header>
   <div class="entry-content">
-    
+    <figure>
+  <img src="https://s3.amazonaws.com/rewferguson.com/img/TodoRedo/todoredo-screenshot-577x1024.png" alt="Screenshot from my phone running the Angular + Ionic web app" />
+  <figcaption>
+    Screenshot from my phone running the Angular + Ionic web app
+  </figcaption>
+</figure>
+
   </div>
 </article>
       
@@ -127,15 +133,19 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        CodePen Demo
       </a>
     </h1>
     <div class="entry-meta">
-      <span class="posted-on"></span>
+      <span class="posted-on">Tue Dec 22 2015 18:00:00 GMT-0600 (CST)</span>
     </div>
   </header>
   <div class="entry-content">
-    
+    <p><p data-height="622" data-theme-id="21445" data-slug-hash="wawNWN" data-default-tab="result" data-user="rewfergu" class='codepen'>See the Pen <a href='http://codepen.io/rewfergu/pen/wawNWN/'>localstorage todo list</a> by rewfergu (<a href='http://codepen.io/rewfergu'>@rewfergu</a>) on <a href='http://codepen.io'>CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Another version with Bootstrap this time instead of ionic.</p>
+
   </div>
 </article>
       
@@ -144,15 +154,17 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        GitHub Repo
       </a>
     </h1>
     <div class="entry-meta">
-      <span class="posted-on"></span>
+      <span class="posted-on">Tue Dec 22 2015 18:00:00 GMT-0600 (CST)</span>
     </div>
   </header>
   <div class="entry-content">
-    
+    <p><a href="https://github.com/rewfergu/todoredo/">TodoRedo repository on GitHub</a></p>
+<p>Created a repository on GitHub for the project and I&#39;ve started referring to it as TodoRedo, instead of just Angular Todo List.</p>
+
   </div>
 </article>
       
@@ -161,15 +173,19 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        added PouchDB branch
       </a>
     </h1>
     <div class="entry-meta">
-      <span class="posted-on"></span>
+      <span class="posted-on">Wed Feb 17 2016 18:00:00 GMT-0600 (CST)</span>
     </div>
   </header>
   <div class="entry-content">
-    
+    <p>I started thinking about using PouchDB and just using local storage for the todo list data. It works, but not great and there may still be an easier way.</p>
+<p><a href="https://github.com/rewfergu/todoredo/tree/pouch">PouchDB branch on GitHub</a></p>
+<p>PouchDB is an offline first data storage library built on CouchDB. The idea is that the data is managed offline and then synced online when you have a connection. To use offline only, just don&#39;t sync the data.</p>
+<p><a href="http://pouchdb.com/">pouchdb.com</a></p>
+
   </div>
 </article>
       
@@ -178,15 +194,20 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        added react branch
       </a>
     </h1>
     <div class="entry-meta">
-      <span class="posted-on"></span>
+      <span class="posted-on">Wed Feb 17 2016 18:00:00 GMT-0600 (CST)</span>
     </div>
   </header>
   <div class="entry-content">
-    
+    <p><img src="https://s3.amazonaws.com/rewferguson.com/img/TodoRedo/react-ui.png" alt="react ui"></p>
+<p>I wasn&#39;t happy with the UI I had built in Angular or Angular + Ionic, so I started again using react this time. I never really liked using animations in angular and I didn&#39;t want to keep messing with the old version anyway so starting over didn&#39;t seem any worse than any of the other options.  </p>
+<p>I started down the PouchDB road, but eventually I did think storing the data in a database was a good idea, and I already had the firebase thing setup so I went back to that. Adding the login back in is never super fun to me, but I got the basics in without that much trouble.</p>
+<p>I still don&#39;t have any animations yet, but based on some CodePen test I think I can do it with a bit more flexibility. And I&#39;m starting to get the swing of setting up and nesting react components.</p>
+<p><a href="https://github.com/rewfergu/todoredo/tree/reactfire">react branch on Github</a></p>
+
   </div>
 </article>
       
@@ -195,15 +216,43 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        react animation test
       </a>
     </h1>
     <div class="entry-meta">
-      <span class="posted-on"></span>
+      <span class="posted-on">Sat Feb 20 2016 18:00:00 GMT-0600 (CST)</span>
     </div>
   </header>
   <div class="entry-content">
-    
+    <p>I added a react animation test to CodePen. I wanted to test out the possibility of adding GreenSock TweenMax animations to react components. So far it seems pretty easy. I added animations during:</p>
+<ul>
+<li>componentDidMount</li>
+<li>componentDidUpdate</li>
+<li>custom function calls</li>
+</ul>
+<p>I referenced the elements using the <em>ref</em> attribute and passing in a custom <em>position</em> prop. I incremented the position prop at render and was able to use it to delay the animation trigger.</p>
+<pre>
+<code class="language-jsx">
+render() {
+  var _this = this;
+  return (
+    <div className="wrapper">
+      <Hello />
+      <button onClick={this.toggleList} ref="listBtn">Close</button>
+      <ul ref="list">
+      {this.props.fish.map(function(item, i) {
+        return <ListItem itemText={item} position={i} visible={_this.state.listExpanded} />;
+      })}
+      </ul>
+    </div>
+  );
+}
+</code>
+</pre>
+
+<p><p data-height="600" data-theme-id="21445" data-slug-hash="PZyLMj" data-default-tab="result" data-user="rewfergu" class='codepen'>See the Pen <a href='http://codepen.io/rewfergu/pen/PZyLMj/'>React with GSAP</a> by rewfergu (<a href='http://codepen.io/rewfergu'>@rewfergu</a>) on <a href='http://codepen.io'>CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
   </div>
 </article>
       

@@ -106,7 +106,7 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        Dollar Input Formatter
       </a>
     </h1>
     <div class="entry-meta">
@@ -114,7 +114,13 @@
     </div>
   </header>
   <div class="entry-content">
-    
+    <p>I needed a quick way to enter a dollar value into a mobile application.  The critical thing for me was being able to enter data as fast as possible, or the application wasn&#8217;t going to be useful.  I could see myself trying to enter info with one hand, probably on the go, and I didn&#8217;t want to hit even one extra button.  My ATMs have an auto format feature where you just start entering digits, and the machine formats the decimal for you, so 999 translates into 9.99.  Entering in an extra two digits on a keypad is easier for me than switching keyboard layouts and finding the period key.  What I mean is 9 might be faster than typing 900, but 499 is faster than 4.99. If that makes any sense.</p>
+<p><a href="https://github.com/rewfergu/dollarformat"><img class="alignnone  wp-image-467" alt="dollar formatter" src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/dollarFormat.png" width="419" height="260" /></a></p>
+<p><a href="https://github.com/rewfergu/dollarformat" target="_blank">https://github.com/rewfergu/dollarformat</a></p>
+<p>All that was really required was for javascript to look at the string of digits and put the decimal in the right spot before I save to the database.  There is a regular expression to check for keys other than numeric keys, but on an iPhone it wasn&#8217;t really necessary.  To bring up the super fast numeric keypad I just needed to add a pattern attribute to my input.</p>
+<pre><code>&lt;input id=&quot;addExpense&quot; type=&quot;text&quot; pattern=&quot;[0-9]*&quot; placeholder=&quot;0.00&quot; /&gt;
+</code></pre><p><a href="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/photo.png"><img class="alignnone  wp-image-468" alt="add transaction screen" src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/photo.png" width="448" height="672" /></a></p>
+
   </div>
 </article>
       
@@ -123,7 +129,7 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        Ultra Simple Pie Charts
       </a>
     </h1>
     <div class="entry-meta">
@@ -131,7 +137,10 @@
     </div>
   </header>
   <div class="entry-content">
-    
+    <p>I needed a super simple way to create pie charts to represent percentages. I looked around at scripts, but it was just easier to write a simple canvas script.</p>
+<p><img src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/piecon.png" alt="pie chart"></p>
+<p><a href="https://github.com/rewfergu/piecon" title="piecon" target="_blank">PieCon</a></p>
+
   </div>
 </article>
       
@@ -140,7 +149,7 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        HSL level indication
       </a>
     </h1>
     <div class="entry-meta">
@@ -148,7 +157,10 @@
     </div>
   </header>
   <div class="entry-content">
-    
+    <p><a href="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/hslLevels.png"><img class="alignnone size-large wp-image-597" src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/hslLevels-417x1024.png" alt="hslLevels" width="417" height="1024" /></a></p>
+<p>I needed a way to assign a color value to a percentage &#8211; 100% being perfect and 0% being lowest possible.  This wouldn&#8217;t work for red/green color blindness, so a printed text value would have to be used as a backup.</p>
+<!--more-->
+
   </div>
 </article>
       
@@ -157,15 +169,19 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        CodePen Demo
       </a>
     </h1>
     <div class="entry-meta">
-      <span class="posted-on"></span>
+      <span class="posted-on">Mon Dec 21 2015 18:00:00 GMT-0600 (CST)</span>
     </div>
   </header>
   <div class="entry-content">
-    
+    <p><p data-height="556" data-theme-id="21445" data-slug-hash="c99c7b3b3d57f96c250c2603d058066d" data-default-tab="result" data-user="rewfergu" class='codepen'>See the Pen <a href='http://codepen.io/rewfergu/pen/c99c7b3b3d57f96c250c2603d058066d/'>Budget Tracker</a> by rewfergu (<a href='http://codepen.io/rewfergu'>@rewfergu</a>) on <a href='http://codepen.io'>CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>This was just a basic test to get the Angular directives working and the UI hooked up and everything.  It&#39;s still missing a bunch of functionality. I started off with really bright clown colors for the budget category status colors, then I muted them way down, and now I feel like I overdid it in the other direction.</p>
+
   </div>
 </article>
       
@@ -174,15 +190,16 @@
   <header class="entry-header">
     <h1 class="entry-title">
       <a href="">
-        
+        GitHub Repo
       </a>
     </h1>
     <div class="entry-meta">
-      <span class="posted-on"></span>
+      <span class="posted-on">Mon Dec 21 2015 18:00:00 GMT-0600 (CST)</span>
     </div>
   </header>
   <div class="entry-content">
-    
+    <p><a href="https://github.com/rewfergu/budgetTracker">Budget Tracker Repository on GitHub</a></p>
+
   </div>
 </article>
       
