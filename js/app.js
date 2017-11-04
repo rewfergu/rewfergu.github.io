@@ -80,7 +80,7 @@ function setup() {
     }
   };
 
-  for (var i = 0; i < 200; i++) {
+  for (var i = 0; i < nodeCount; i++) {
     movers.push(new Mover());
   }
 }
