@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -15,22 +16,18 @@
 </head>
 
 <body>
-  <div id="page" class="site journal">
+  <div class="journal">
 
-    <header id="masthead" class="site-header" role="banner">
-		<h1 class="site-title"><a href="/projects">Journal</a></h1>
-</header>
+    <header id="masthead" class="journal__header" role="banner">
+      <h1 class="journal__title"><a href="/projects">Journal</a></h1>
+    </header>
 
-    <div id="primary" class="content-area">
-      <main id="main" class="site-main" role="main">
-
+    <div class="journal__content">
+      <div class="journal__sidebar">
         
-  
-  <!-- PROJECT INDEX -->
-<section class="wrapper project-index">
-  <header class="project-group-heading">
+  <header class="projectList">
 
-    <h1>
+    <h1 class="projectList__heading">
       
         <a href="/projects/active">Active Projects</a>
       
@@ -40,106 +37,97 @@
       
     </h1>
 
-    <h2>
-      <a href="#">Raspberry Pi Video Camera</a>
-    </h2>
-
     <nav>
-      <ul class="project-group-list">
+      <ul>
         
-        <li>
-          <a href="posts/2015-02-10-canon-514xl-s.html">Canon 514xl-s</a>
-        </li>
+          <li><a href="/projects/branches">branches</a></li>
         
-        <li>
-          <a href="posts/2015-02-11-camera-setups.html">Camera Setups</a>
-        </li>
+          <li><a href="/projects/budget-tracker">Budget Tracker</a></li>
         
-        <li>
-          <a href="posts/2015-02-12-basic-test.html">Basic Test</a>
-        </li>
+          <li><a href="/projects/drawing-game">Drawing Game</a></li>
         
-        <li>
-          <a href="posts/2015-02-12-sample-image.html">Sample Image</a>
-        </li>
+          <li><a href="/projects/flipdraw">Flip Draw</a></li>
         
-        <li>
-          <a href="posts/2015-02-20-adjusting-the-image-sensor.html">Adjusting the image sensor</a>
-        </li>
+          <li><a href="/projects/photo-scramble">Photo Scramble</a></li>
         
-        <li>
-          <a href="posts/2015-02-25-got-one-gpio-button-working.html">Got one GPIO button working</a>
-        </li>
+          <li><a href="/projects/quadcopter">Quadcopter</a></li>
         
-        <li>
-          <a href="posts/2015-03-14-camera-test.html">Camera Test</a>
-        </li>
+          <li><a class="current" href="/projects/raspberry-pi-video-camera">Raspberry Pi Video Camera</a></li>
         
-        <li>
-          <a href="posts/2015-03-23-working-concept.html">Working Concept</a>
-        </li>
+          <li><a href="/projects/todoredo">TodoRedo</a></li>
+        
+          <li><a href="/projects/weather-lamp">Weather Lamp</a></li>
+        
+          <li><a href="/projects/hangman">Hangman</a></li>
+        
+          <li><a href="/projects/franktank">The Frank Tank</a></li>
+        
+          <li><a href="/projects/sounddeck">SoundDeck</a></li>
         
       </ul>
     </nav>
 
   </header>
 
-  <div class="project-group">
-    <section class="category">
-      <header class="project-heading">
-        <h2 class="category-title">
-          Raspberry Pi Video Camera
-        </h2>
+      </div>
 
+      <main id="main" class="journal__main" role="main">
         
-
-        <p>
-          I used to have a pretty big collection of vintage cameras, although its quite a bit smaller these days. I purchased a really cool Canon super 8 camera with sound the other day and I’ve been trying to figure out to breathe new life into it. I imagined that if I could find a way to modify the Raspberry Pi camera module and fit it inside the case, there would be enough room inside the film compartment for the rest of the Raspberry Pi’s electronics. I’d have a Raspberry Pi powered camera inside a cool vintage super 8 case.
-        </p>
-
-        
-          <ul class="tags">
-            
-              <li class="tags__tag">raspberry pi</li>
-            
-              <li class="tags__tag">python</li>
-            
-          </ul>
-        
-      </header>
-
+  <section class="project">
+    <header class="project__heading">
       
         
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      
+      
+      <h2 class="project__title emphasis">
+        Raspberry Pi Video Camera
+      </h2>
+
+      
+
+      <p>
+        I used to have a pretty big collection of vintage cameras, although its quite a bit smaller these days. I purchased a really cool Canon super 8 camera with sound the other day and I’ve been trying to figure out to breathe new life into it. I imagined that if I could find a way to modify the Raspberry Pi camera module and fit it inside the case, there would be enough room inside the film compartment for the rest of the Raspberry Pi’s electronics. I’d have a Raspberry Pi powered camera inside a cool vintage super 8 case.
+      </p>
+
+      
+        <ul class="project__tags">
+          
+            <li class="project__tag">raspberry pi</li>
+          
+            <li class="project__tag">python</li>
+          
+        </ul>
+      
+    </header>
+
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-02-10-canon-514xl-s.html">
         Canon 514xl-s
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on"></span>
-    </div>
+    <div class="post__meta"></div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p><img src="https://s3.amazonaws.com/rewferguson.com/img/Raspberry-Pi-Video-Camera/IMG_0643.jpg" alt="image"></p>
 
   </div>
 </article>
+    
       
-        
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-02-11-camera-setups.html">
         Camera Setups
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on"></span>
-    </div>
+    <div class="post__meta"></div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <figure>
   <img src="https://s3.amazonaws.com/rewferguson.com/img/Raspberry-Pi-Video-Camera/piCamera-with-bluetooth-keyboard.jpg" alt="Camera with Bluetooth keyboard and HDMI monitor" />
   <figcaption>
@@ -161,113 +149,101 @@
 
   </div>
 </article>
+    
       
-        
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-02-12-basic-test.html">
         Basic Test
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on"></span>
-    </div>
+    <div class="post__meta"></div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p>I&#8217;ve pulled the plastic lens from the camera module and placed it somewhere near the focal plane of my 35mm lens.  This is an old mamiya 50mm that I&#8217;ve dissasembled.</p>
 <p><img src="https://s3.amazonaws.com/rewferguson.com/img/Raspberry-Pi-Video-Camera/cameraFront.jpg" alt="camera front"></p>
 <p><img src="https://s3.amazonaws.com/rewferguson.com/img/Raspberry-Pi-Video-Camera/cameraSideView.jpg" alt="camera side view"></p>
 
   </div>
 </article>
+    
       
-        
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-02-12-sample-image.html">
         Sample Image
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on"></span>
-    </div>
+    <div class="post__meta"></div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p><img src="https://s3.amazonaws.com/rewferguson.com/img/Raspberry-Pi-Video-Camera/cameraTest.jpg" alt="camera test"></p>
 
   </div>
 </article>
+    
       
-        
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-02-20-adjusting-the-image-sensor.html">
         Adjusting the image sensor
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on"></span>
-    </div>
+    <div class="post__meta"></div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p><img src="https://s3.amazonaws.com/rewferguson.com/img/Raspberry-Pi-Video-Camera/IMG_0673.jpg" alt="image test"></p>
 <p>If I used two machine screws connected with a magnet, I would have precise control over the up/down, forward/back placement of the sensor.</p>
 
   </div>
 </article>
+    
       
-        
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-02-25-got-one-gpio-button-working.html">
         Got one GPIO button working
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on"></span>
-    </div>
+    <div class="post__meta"></div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p>﻿<img src="https://s3.amazonaws.com/rewferguson.com/img/Raspberry-Pi-Video-Camera/IMG_0675.jpg" alt="Raspberry Pi"></p>
 
   </div>
 </article>
+    
       
-        
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-03-14-camera-test.html">
         Camera Test
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on"></span>
-    </div>
+    <div class="post__meta"></div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p>&nbsp;</p>
 
   </div>
 </article>
+    
       
-        
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-03-23-working-concept.html">
         Working Concept
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on"></span>
-    </div>
+    <div class="post__meta"></div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p><img src="https://s3.amazonaws.com/rewferguson.com/img/Raspberry-Pi-Video-Camera/FullSizeRender-5.jpg" alt="image">
 <img src="https://s3.amazonaws.com/rewferguson.com/img/Raspberry-Pi-Video-Camera/FullSizeRender-7.jpg" alt="image">
 <img src="https://s3.amazonaws.com/rewferguson.com/img/Raspberry-Pi-Video-Camera/FullSizeRender-4.jpg" alt="image">
@@ -281,28 +257,22 @@
 
   </div>
 </article>
-      
+    
 
-    </section>
-  </div>
-
-</section>
-
-
+  </section>
 
       </main>
     </div>
   </div>
 
-  <footer id="colophon" class="site-footer" role="contentinfo">
+  <footer id="colophon" class="journal__footer" role="contentinfo">
   <ul>
         <li><a href="/">Robert Ferguson</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="https://twitter.com/rewfergu">Twitter</a></li>
-        <li><a href="http://robertferguson.tumblr.com/">Tumblr</a></li>
-        <li><a href="http://codepen.io/rewfergu">Codepen</a></li>
         <li><a href="https://github.com/rewfergu">Github</a></li>
+        <li><a href="http://codepen.io/rewfergu">Codepen</a></li>
         <li><a href="http://www.linkedin.com/in/rewferguson">LinkedIn</a></li>
+        <li><a href="https://twitter.com/rewfergu">Twitter</a></li>
       </ul>
 </footer>
 
@@ -310,8 +280,4 @@
 <script src="/js/prism.js"></script>
 
 </body>
-</html>
-
-</body>
-
 </html>

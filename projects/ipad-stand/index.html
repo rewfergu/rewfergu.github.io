@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -15,22 +16,18 @@
 </head>
 
 <body>
-  <div id="page" class="site journal">
+  <div class="journal">
 
-    <header id="masthead" class="site-header" role="banner">
-		<h1 class="site-title"><a href="/projects">Journal</a></h1>
-</header>
+    <header id="masthead" class="journal__header" role="banner">
+      <h1 class="journal__title"><a href="/projects">Journal</a></h1>
+    </header>
 
-    <div id="primary" class="content-area">
-      <main id="main" class="site-main" role="main">
-
+    <div class="journal__content">
+      <div class="journal__sidebar">
         
-  
-  <!-- PROJECT INDEX -->
-<section class="wrapper project-index">
-  <header class="project-group-heading">
+  <header class="projectList">
 
-    <h1>
+    <h1 class="projectList__heading">
       
 
       
@@ -40,80 +37,85 @@
       
     </h1>
 
-    <h2>
-      <a href="#">iPad Stand</a>
-    </h2>
-
     <nav>
-      <ul class="project-group-list">
+      <ul>
         
-        <li>
-          <a href="posts/2013-05-07-ipad-stand.html">iPad stand</a>
-        </li>
+          <li><a href="/projects/dynamicat">DynamiCat</a></li>
+        
+          <li><a href="/projects/framesqueezer">Frame Squeezer</a></li>
+        
+          <li><a class="current" href="/projects/ipad-stand">iPad Stand</a></li>
+        
+          <li><a href="/projects/raspberry-pi-bluetooth-audio-receiver">Raspberry Pi Bluetooth Audio Receiver</a></li>
+        
+          <li><a href="/projects/timer">Timer</a></li>
+        
+          <li><a href="/projects/udacity-arcade-game-project">Udacity Arcade Game Project</a></li>
+        
+          <li><a href="/projects/udacity-neighborhood-map-project">Udacity Neighborhood Map Project</a></li>
         
       </ul>
     </nav>
 
   </header>
 
-  <div class="project-group">
-    <section class="category">
-      <header class="project-heading">
-        <h2 class="category-title">
-          iPad Stand
-        </h2>
+      </div>
 
+      <main id="main" class="journal__main" role="main">
         
-
-        <p>
-          
-        </p>
-
-        
-      </header>
-
+  <section class="project">
+    <header class="project__heading">
       
         
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      
+      
+      <h2 class="project__title emphasis">
+        iPad Stand
+      </h2>
+
+      
+
+      <p>
+        
+      </p>
+
+      
+    </header>
+
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2013-05-07-ipad-stand.html">
         iPad stand
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on"></span>
-    </div>
+    <div class="post__meta"></div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p>I needed a stand so I could read my iPad easily while sitting at my desk. The amount of junk accessories for mobile devices these days is a bit overwhelming, so after a few minutes of searching I decided to just make one out of a couple pieces of wood. The design is actually really functional. It was inexpensive, folds up almost completely flat, and takes up no space in my bag. Getting the notch cut right took a couple of tries, but overall more rewarding than buying something ready-made.</p>
 <p><img src="https://s3.amazonaws.com/rewferguson.com/img/iPad-Stand/IMG_0082.jpg" alt="stand"></p>
 <p><img src="https://s3.amazonaws.com/rewferguson.com/img/iPad-Stand/IMG_0081.jpg" alt="stand"></p>
 
   </div>
 </article>
-      
+    
 
-    </section>
-  </div>
-
-</section>
-
-
+  </section>
 
       </main>
     </div>
   </div>
 
-  <footer id="colophon" class="site-footer" role="contentinfo">
+  <footer id="colophon" class="journal__footer" role="contentinfo">
   <ul>
         <li><a href="/">Robert Ferguson</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="https://twitter.com/rewfergu">Twitter</a></li>
-        <li><a href="http://robertferguson.tumblr.com/">Tumblr</a></li>
-        <li><a href="http://codepen.io/rewfergu">Codepen</a></li>
         <li><a href="https://github.com/rewfergu">Github</a></li>
+        <li><a href="http://codepen.io/rewfergu">Codepen</a></li>
         <li><a href="http://www.linkedin.com/in/rewferguson">LinkedIn</a></li>
+        <li><a href="https://twitter.com/rewfergu">Twitter</a></li>
       </ul>
 </footer>
 
@@ -121,8 +123,4 @@
 <script src="/js/prism.js"></script>
 
 </body>
-</html>
-
-</body>
-
 </html>

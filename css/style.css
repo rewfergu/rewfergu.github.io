@@ -64,6 +64,7 @@ canvas {
   position: fixed;
   left: 0;
   top: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 @media (max-width: 30em) {
@@ -73,7 +74,6 @@ canvas {
 /* work */
 .work.wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
@@ -111,7 +111,6 @@ canvas {
 
 .work main article {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
@@ -122,8 +121,14 @@ canvas {
 .work main article .media {
   max-width: 40%;
   margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start; }
 
 @media (max-width: 40rem) {
@@ -188,19 +193,33 @@ canvas {
     margin: 50px auto; }
 
 .fadeIn {
+  -webkit-animation: fadeIn .5s;
   animation: fadeIn .5s;
   opacity: 1; }
 
 .fadeOut {
   opacity: 1;
+  -webkit-animation: fadeOut .5s;
   animation: fadeOut .5s;
   opacity: 0; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 @keyframes fadeIn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 @keyframes fadeOut {
   from {

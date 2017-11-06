@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -15,22 +16,18 @@
 </head>
 
 <body>
-  <div id="page" class="site journal">
+  <div class="journal">
 
-    <header id="masthead" class="site-header" role="banner">
-		<h1 class="site-title"><a href="/projects">Journal</a></h1>
-</header>
+    <header id="masthead" class="journal__header" role="banner">
+      <h1 class="journal__title"><a href="/projects">Journal</a></h1>
+    </header>
 
-    <div id="primary" class="content-area">
-      <main id="main" class="site-main" role="main">
-
+    <div class="journal__content">
+      <div class="journal__sidebar">
         
-  
-  <!-- PROJECT INDEX -->
-<section class="wrapper project-index">
-  <header class="project-group-heading">
+  <header class="projectList">
 
-    <h1>
+    <h1 class="projectList__heading">
       
         <a href="/projects/active">Active Projects</a>
       
@@ -40,74 +37,87 @@
       
     </h1>
 
-    <h2>
-      <a href="#">Quadcopter</a>
-    </h2>
-
     <nav>
-      <ul class="project-group-list">
+      <ul>
         
-        <li>
-          <a href="posts/2016-02-11-nodeClaw.html">nodeClaw</a>
-        </li>
+          <li><a href="/projects/branches">branches</a></li>
         
-        <li>
-          <a href="posts/2016-02-17-salvaged-RC-parts.html">salvaged RC parts</a>
-        </li>
+          <li><a href="/projects/budget-tracker">Budget Tracker</a></li>
         
-        <li>
-          <a href="posts/2016-02-25-remote-controlled-web-page.html">remote controlled web page</a>
-        </li>
+          <li><a href="/projects/drawing-game">Drawing Game</a></li>
+        
+          <li><a href="/projects/flipdraw">Flip Draw</a></li>
+        
+          <li><a href="/projects/photo-scramble">Photo Scramble</a></li>
+        
+          <li><a class="current" href="/projects/quadcopter">Quadcopter</a></li>
+        
+          <li><a href="/projects/raspberry-pi-video-camera">Raspberry Pi Video Camera</a></li>
+        
+          <li><a href="/projects/todoredo">TodoRedo</a></li>
+        
+          <li><a href="/projects/weather-lamp">Weather Lamp</a></li>
+        
+          <li><a href="/projects/hangman">Hangman</a></li>
+        
+          <li><a href="/projects/franktank">The Frank Tank</a></li>
+        
+          <li><a href="/projects/sounddeck">SoundDeck</a></li>
         
       </ul>
     </nav>
 
   </header>
 
-  <div class="project-group">
-    <section class="category">
-      <header class="project-heading">
-        <h2 class="category-title">
-          Quadcopter
-        </h2>
+      </div>
 
+      <main id="main" class="journal__main" role="main">
         
-          <img src="https://s3.amazonaws.com/rewferguson.com/img/Quadcopter/header.svg" alt="project header graphic" />
-        
-
-        <p>
-          I&#39;m trying to build a quadcopter, and learning about each piece as I go.
-        </p>
-
-        
-          <ul class="tags">
-            
-              <li class="tags__tag">arduino</li>
-            
-              <li class="tags__tag">node</li>
-            
-              <li class="tags__tag">raspberry pi</li>
-            
-              <li class="tags__tag">johnny five</li>
-            
-          </ul>
-        
-      </header>
-
+  <section class="project">
+    <header class="project__heading">
       
         
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      
+      
+      <h2 class="project__title">
+        Quadcopter
+      </h2>
+
+      
+        <img src="https://s3.amazonaws.com/rewferguson.com/img/Quadcopter/header.svg" alt="project header graphic" />
+      
+
+      <p>
+        I&#39;m trying to build a quadcopter, and learning about each piece as I go.
+      </p>
+
+      
+        <ul class="project__tags">
+          
+            <li class="project__tag">arduino</li>
+          
+            <li class="project__tag">node</li>
+          
+            <li class="project__tag">raspberry pi</li>
+          
+            <li class="project__tag">johnny five</li>
+          
+        </ul>
+      
+    </header>
+
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2016-02-11-nodeClaw.html">
         nodeClaw
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on">Wed Feb 10 2016 18:00:00 GMT-0600 (CST)</span>
-    </div>
+    <div class="post__meta">Wed Feb 10 2016 18:00:00 GMT-0600 (CST)</div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <video src="https://s3.amazonaws.com/rewferguson.com/img/Quadcopter/react_test.mp4" controls></video>
 
 <p>This is a simple experiment to communicate with servos over a node server.  Node is running an express server with a react ui, communication is then sent back to the server in real time using socket.io, then those instructions are sent to the servos using the Johnny Five framework.</p>
@@ -117,40 +127,36 @@
 
   </div>
 </article>
+    
       
-        
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2016-02-17-salvaged-RC-parts.html">
         salvaged RC parts
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on">Tue Feb 16 2016 18:00:00 GMT-0600 (CST)</span>
-    </div>
+    <div class="post__meta">Tue Feb 16 2016 18:00:00 GMT-0600 (CST)</div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p>I was able to salvage the transmitter, receiver, motor, speed controller, and servos from an old RC plane I found.  Still works. The whole setup is actually much simpler than I imagined.</p>
 <p>It does need lots of batteries, which I don&#39;t have, so I just pulled a couple AC adapters out of my AC adapter graveyard and wired the transmitter and receiver directly to them. The receiver worked with 5 volts and the transmitter with 12.</p>
 <video src="https://s3.amazonaws.com/rewferguson.com/img/Quadcopter/rc_test.mp4" controls></video>
 
   </div>
 </article>
+    
       
-        
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2016-02-25-remote-controlled-web-page.html">
         remote controlled web page
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on">Wed Feb 24 2016 18:00:00 GMT-0600 (CST)</span>
-    </div>
+    <div class="post__meta">Wed Feb 24 2016 18:00:00 GMT-0600 (CST)</div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p>Getting an RC transmitter to talk to a servo is pretty easy. That&#39;s what it is made for and it pretty much works out of the box. Getting an RC transmitter to talk to node.js isn&#39;t really that straightforward.  </p>
 <div class="flex-video"><iframe src="https://drive.google.com/file/d/1yJgTYC08b6wN3c14Y-_b0giQ2Z8pHtCKPw/preview" width="640" height="480"></iframe></div>
 
@@ -178,28 +184,22 @@
 
   </div>
 </article>
-      
+    
 
-    </section>
-  </div>
-
-</section>
-
-
+  </section>
 
       </main>
     </div>
   </div>
 
-  <footer id="colophon" class="site-footer" role="contentinfo">
+  <footer id="colophon" class="journal__footer" role="contentinfo">
   <ul>
         <li><a href="/">Robert Ferguson</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="https://twitter.com/rewfergu">Twitter</a></li>
-        <li><a href="http://robertferguson.tumblr.com/">Tumblr</a></li>
-        <li><a href="http://codepen.io/rewfergu">Codepen</a></li>
         <li><a href="https://github.com/rewfergu">Github</a></li>
+        <li><a href="http://codepen.io/rewfergu">Codepen</a></li>
         <li><a href="http://www.linkedin.com/in/rewferguson">LinkedIn</a></li>
+        <li><a href="https://twitter.com/rewfergu">Twitter</a></li>
       </ul>
 </footer>
 
@@ -207,8 +207,4 @@
 <script src="/js/prism.js"></script>
 
 </body>
-</html>
-
-</body>
-
 </html>

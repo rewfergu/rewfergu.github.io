@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -15,22 +16,18 @@
 </head>
 
 <body>
-  <div id="page" class="site journal">
+  <div class="journal">
 
-    <header id="masthead" class="site-header" role="banner">
-		<h1 class="site-title"><a href="/projects">Journal</a></h1>
-</header>
+    <header id="masthead" class="journal__header" role="banner">
+      <h1 class="journal__title"><a href="/projects">Journal</a></h1>
+    </header>
 
-    <div id="primary" class="content-area">
-      <main id="main" class="site-main" role="main">
-
+    <div class="journal__content">
+      <div class="journal__sidebar">
         
-  
-  <!-- PROJECT INDEX -->
-<section class="wrapper project-index">
-  <header class="project-group-heading">
+  <header class="projectList">
 
-    <h1>
+    <h1 class="projectList__heading">
       
 
       
@@ -40,82 +37,87 @@
       
     </h1>
 
-    <h2>
-      <a href="#">Maze Game</a>
-    </h2>
-
     <nav>
-      <ul class="project-group-list">
+      <ul>
         
-        <li>
-          <a href="posts/2014-06-23-maze-sketch.html">maze sketch</a>
-        </li>
+          <li><a href="/projects/arduino-web-controller">Arduino Web Controller</a></li>
+        
+          <li><a href="/projects/laptop-stand">Laptop Stand</a></li>
+        
+          <li><a class="current" href="/projects/maze-game">Maze Game</a></li>
+        
+          <li><a href="/projects/midi-controller">Midi Controller</a></li>
+        
+          <li><a href="/projects/octopus">Octopus</a></li>
+        
+          <li><a href="/projects/projector">Projector</a></li>
+        
+          <li><a href="/projects/untitled-water-drop-game">Untitled Water Drop Game</a></li>
         
       </ul>
     </nav>
 
   </header>
 
-  <div class="project-group">
-    <section class="category">
-      <header class="project-heading">
-        <h2 class="category-title">
-          Maze Game
-        </h2>
+      </div>
 
+      <main id="main" class="journal__main" role="main">
         
-
-        <p>
-          A simple maze game for mobile that uses the accelerometer to move the player.
-        </p>
-
-        
-          <ul class="tags">
-            
-          </ul>
-        
-      </header>
-
+  <section class="project">
+    <header class="project__heading">
       
         
-        <article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="">
+      
+      
+      <h2 class="project__title emphasis">
+        Maze Game
+      </h2>
+
+      
+
+      <p>
+        A simple maze game for mobile that uses the accelerometer to move the player.
+      </p>
+
+      
+        <ul class="project__tags">
+          
+        </ul>
+      
+    </header>
+
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2014-06-23-maze-sketch.html">
         maze sketch
       </a>
     </h1>
-    <div class="entry-meta">
-      <span class="posted-on"></span>
-    </div>
+    <div class="post__meta"></div>
   </header>
-  <div class="entry-content">
+  <div class="post__content">
     <p><img src="https://s3.amazonaws.com/rewferguson.com/img/Maze-Game/mazy.png" alt="maze"></p>
 
   </div>
 </article>
-      
+    
 
-    </section>
-  </div>
-
-</section>
-
-
+  </section>
 
       </main>
     </div>
   </div>
 
-  <footer id="colophon" class="site-footer" role="contentinfo">
+  <footer id="colophon" class="journal__footer" role="contentinfo">
   <ul>
         <li><a href="/">Robert Ferguson</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="https://twitter.com/rewfergu">Twitter</a></li>
-        <li><a href="http://robertferguson.tumblr.com/">Tumblr</a></li>
-        <li><a href="http://codepen.io/rewfergu">Codepen</a></li>
         <li><a href="https://github.com/rewfergu">Github</a></li>
+        <li><a href="http://codepen.io/rewfergu">Codepen</a></li>
         <li><a href="http://www.linkedin.com/in/rewferguson">LinkedIn</a></li>
+        <li><a href="https://twitter.com/rewfergu">Twitter</a></li>
       </ul>
 </footer>
 
@@ -123,8 +125,4 @@
 <script src="/js/prism.js"></script>
 
 </body>
-</html>
-
-</body>
-
 </html>

@@ -15,28 +15,23 @@
 </head>
 
 <body>
-  <div id="page" class="site journal">
+  <div class="journal">
 
-    <header id="masthead" class="site-header" role="banner">
-		<h1 class="site-title"><a href="/projects">Journal</a></h1>
-</header>
-
-    <div id="primary" class="content-area">
-      <main id="main" class="site-main" role="main">
-
-        
-
-  <div class="single">
-  
-
-  <article class="post">
-    <header class="entry-header">
-      <h1 class="entry-title">react animation test</h1>
-      
+    <header id="masthead" class="journal__header" role="banner">
+      <h1 class="journal__title"><a href="/projects">Journal</a></h1>
     </header>
-    <div class="entry-content">
 
-      <p>I added a react animation test to CodePen. I wanted to test out the possibility of adding GreenSock TweenMax animations to react components. So far it seems pretty easy. I added animations during:</p>
+    <div class="journal__content">
+        
+  <div class="single">
+    <article class="post">
+      <header class="post__header">
+        <h1 class="post__title">react animation test</h1>
+        <div class="post__meta"></p>
+      </header>
+
+      <div class="post__content">
+        <p>I added a react animation test to CodePen. I wanted to test out the possibility of adding GreenSock TweenMax animations to react components. So far it seems pretty easy. I added animations during:</p>
 <ul>
 <li>componentDidMount</li>
 <li>componentDidUpdate</li>
@@ -65,39 +60,21 @@ render() {
 <p><p data-height="600" data-theme-id="21445" data-slug-hash="PZyLMj" data-default-tab="result" data-user="rewfergu" class='codepen'>See the Pen <a href='http://codepen.io/rewfergu/pen/PZyLMj/'>React with GSAP</a> by rewfergu (<a href='http://codepen.io/rewfergu'>@rewfergu</a>) on <a href='http://codepen.io'>CodePen</a>.</p></p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-
-    </div>
-    <!-- <footer class="entry-footer">Footer Links</footer> -->
-  </article>
-
-  <!-- <nav class="navigation post-navigation" role="navigation">
-    <div class="nav-links">
-      <div class="nav-previous">
-        <a href="" rel="prev"></a>
       </div>
-      <div class="nav-next">
-        <a href="" rel="next"></a>
-      </div>
-    </div>
-  </nav> -->
-
+    </article>
   </div>
 
-
-
-      </main>
     </div>
   </div>
 
-  <footer id="colophon" class="site-footer" role="contentinfo">
+  <footer id="colophon" class="journal__footer" role="contentinfo">
   <ul>
         <li><a href="/">Robert Ferguson</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="https://twitter.com/rewfergu">Twitter</a></li>
-        <li><a href="http://robertferguson.tumblr.com/">Tumblr</a></li>
-        <li><a href="http://codepen.io/rewfergu">Codepen</a></li>
         <li><a href="https://github.com/rewfergu">Github</a></li>
+        <li><a href="http://codepen.io/rewfergu">Codepen</a></li>
         <li><a href="http://www.linkedin.com/in/rewferguson">LinkedIn</a></li>
+        <li><a href="https://twitter.com/rewfergu">Twitter</a></li>
       </ul>
 </footer>
 
@@ -105,8 +82,4 @@ render() {
 <script src="/js/prism.js"></script>
 
 </body>
-</html>
-
-</body>
-
 </html>
