@@ -39,7 +39,20 @@ header nav ul li {
 
 header nav ul li a {
   color: #862d2d;
-  text-decoration: none; }
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  header nav ul li a:hover, header nav ul li a:focus {
+    color: #222; }
+    header nav ul li a:hover svg, header nav ul li a:focus svg {
+      fill: #222; }
+  header nav ul li a svg {
+    fill: #862d2d;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: block;
+    margin-right: 1rem; }
 
 /* home */
 .home.wrapper {

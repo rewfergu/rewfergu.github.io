@@ -311,6 +311,19 @@ figure {
     border-bottom: 1px solid #ccc;
     margin-bottom: 1rem; }
 
+.project__github,
+.project__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .project__github svg,
+  .project__link svg {
+    fill: #862d2d;
+    height: 1.3rem;
+    width: 1.3rem;
+    display: block;
+    margin-right: 0.5rem; }
+
 .project__tags {
   list-style: none;
   margin: 0 0 1rem;
@@ -325,4 +338,5 @@ figure {
   white-space: nowrap;
   cursor: default;
   background: #efefef;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-bottom: 5px; }
