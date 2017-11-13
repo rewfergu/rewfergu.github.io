@@ -127,94 +127,15 @@
       <article class="post">
   <header class="post__header">
     <h1 class="post__title">
-      <a href="posts/2015-02-12-screenshot.html">
-        Screenshot
+      <a href="posts/2017-11-11-reset-guest-data.html">
+        Reset Guest Data
       </a>
     </h1>
-    <div class="post__meta"></div>
+    <div class="post__meta">Fri Nov 10 2017 18:00:00 GMT-0600 (CST)</div>
   </header>
   <div class="post__content">
-    <figure>
-  <img src="https://s3.amazonaws.com/rewferguson.com/img/TodoRedo/todoredo-screenshot-577x1024.png" alt="Screenshot from my phone running the Angular + Ionic web app" />
-  <figcaption>
-    Screenshot from my phone running the Angular + Ionic web app
-  </figcaption>
-</figure>
-
-  </div>
-</article>
-    
-      
-      <article class="post">
-  <header class="post__header">
-    <h1 class="post__title">
-      <a href="posts/2015-12-23-CodePen-Demo.html">
-        CodePen Demo
-      </a>
-    </h1>
-    <div class="post__meta">Tue Dec 22 2015 18:00:00 GMT-0600 (CST)</div>
-  </header>
-  <div class="post__content">
-    <p><p data-height="622" data-theme-id="21445" data-slug-hash="wawNWN" data-default-tab="result" data-user="rewfergu" class='codepen'>See the Pen <a href='http://codepen.io/rewfergu/pen/wawNWN/'>localstorage todo list</a> by rewfergu (<a href='http://codepen.io/rewfergu'>@rewfergu</a>) on <a href='http://codepen.io'>CodePen</a>.</p></p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-<p>Another version with Bootstrap this time instead of ionic.</p>
-
-  </div>
-</article>
-    
-      
-      <article class="post">
-  <header class="post__header">
-    <h1 class="post__title">
-      <a href="posts/2015-12-23-GitHub-Repo.html">
-        GitHub Repo
-      </a>
-    </h1>
-    <div class="post__meta">Tue Dec 22 2015 18:00:00 GMT-0600 (CST)</div>
-  </header>
-  <div class="post__content">
-    <p><a href="https://github.com/rewfergu/todoredo/">TodoRedo repository on GitHub</a></p>
-<p>Created a repository on GitHub for the project and I&#39;ve started referring to it as TodoRedo, instead of just Angular Todo List.</p>
-
-  </div>
-</article>
-    
-      
-      <article class="post">
-  <header class="post__header">
-    <h1 class="post__title">
-      <a href="posts/2016-02-18-added-PouchDB-branch.html">
-        added PouchDB branch
-      </a>
-    </h1>
-    <div class="post__meta">Wed Feb 17 2016 18:00:00 GMT-0600 (CST)</div>
-  </header>
-  <div class="post__content">
-    <p>I started thinking about using PouchDB and just using local storage for the todo list data. It works, but not great and there may still be an easier way.</p>
-<p><a href="https://github.com/rewfergu/todoredo/tree/pouch">PouchDB branch on GitHub</a></p>
-<p>PouchDB is an offline first data storage library built on CouchDB. The idea is that the data is managed offline and then synced online when you have a connection. To use offline only, just don&#39;t sync the data.</p>
-<p><a href="http://pouchdb.com/">pouchdb.com</a></p>
-
-  </div>
-</article>
-    
-      
-      <article class="post">
-  <header class="post__header">
-    <h1 class="post__title">
-      <a href="posts/2016-02-18-added-react-branch.html">
-        added react branch
-      </a>
-    </h1>
-    <div class="post__meta">Wed Feb 17 2016 18:00:00 GMT-0600 (CST)</div>
-  </header>
-  <div class="post__content">
-    <p><img src="https://s3.amazonaws.com/rewferguson.com/img/TodoRedo/react-ui.png" alt="react ui"></p>
-<p>I wasn&#39;t happy with the UI I had built in Angular or Angular + Ionic, so I started again using react this time. I never really liked using animations in angular and I didn&#39;t want to keep messing with the old version anyway so starting over didn&#39;t seem any worse than any of the other options.  </p>
-<p>I started down the PouchDB road, but eventually I did think storing the data in a database was a good idea, and I already had the firebase thing setup so I went back to that. Adding the login back in is never super fun to me, but I got the basics in without that much trouble.</p>
-<p>I still don&#39;t have any animations yet, but based on some CodePen test I think I can do it with a bit more flexibility. And I&#39;m starting to get the swing of setting up and nesting react components.</p>
-<p><a href="https://github.com/rewfergu/todoredo/tree/reactfire">react branch on Github</a></p>
+    <p><img src="https://s3.amazonaws.com/rewferguson.com/img/TodoRedo/todoredo-login.jpg" alt="TodoRedo Login Screen"></p>
+<p>There is a guest login option that populates the lists with sample data. In order to keep things tidy the data needs to be reset periodically. I&#39;ve added a cron task on my raspberry pi to reset this data every hour using the firebase cli.</p>
 
   </div>
 </article>
@@ -258,6 +179,102 @@ render() {
 
 <p><p data-height="600" data-theme-id="21445" data-slug-hash="PZyLMj" data-default-tab="result" data-user="rewfergu" class='codepen'>See the Pen <a href='http://codepen.io/rewfergu/pen/PZyLMj/'>React with GSAP</a> by rewfergu (<a href='http://codepen.io/rewfergu'>@rewfergu</a>) on <a href='http://codepen.io'>CodePen</a>.</p></p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+  </div>
+</article>
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2016-02-18-added-react-branch.html">
+        added react branch
+      </a>
+    </h1>
+    <div class="post__meta">Wed Feb 17 2016 18:00:00 GMT-0600 (CST)</div>
+  </header>
+  <div class="post__content">
+    <p><img src="https://s3.amazonaws.com/rewferguson.com/img/TodoRedo/react-ui.png" alt="react ui"></p>
+<p>I wasn&#39;t happy with the UI I had built in Angular or Angular + Ionic, so I started again using react this time. I never really liked using animations in angular and I didn&#39;t want to keep messing with the old version anyway so starting over didn&#39;t seem any worse than any of the other options.  </p>
+<p>I started down the PouchDB road, but eventually I did think storing the data in a database was a good idea, and I already had the firebase thing setup so I went back to that. Adding the login back in is never super fun to me, but I got the basics in without that much trouble.</p>
+<p>I still don&#39;t have any animations yet, but based on some CodePen test I think I can do it with a bit more flexibility. And I&#39;m starting to get the swing of setting up and nesting react components.</p>
+<p><a href="https://github.com/rewfergu/todoredo/tree/reactfire">react branch on Github</a></p>
+
+  </div>
+</article>
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2016-02-18-added-PouchDB-branch.html">
+        added PouchDB branch
+      </a>
+    </h1>
+    <div class="post__meta">Wed Feb 17 2016 18:00:00 GMT-0600 (CST)</div>
+  </header>
+  <div class="post__content">
+    <p>I started thinking about using PouchDB and just using local storage for the todo list data. It works, but not great and there may still be an easier way.</p>
+<p><a href="https://github.com/rewfergu/todoredo/tree/pouch">PouchDB branch on GitHub</a></p>
+<p>PouchDB is an offline first data storage library built on CouchDB. The idea is that the data is managed offline and then synced online when you have a connection. To use offline only, just don&#39;t sync the data.</p>
+<p><a href="http://pouchdb.com/">pouchdb.com</a></p>
+
+  </div>
+</article>
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-12-23-GitHub-Repo.html">
+        GitHub Repo
+      </a>
+    </h1>
+    <div class="post__meta">Tue Dec 22 2015 18:00:00 GMT-0600 (CST)</div>
+  </header>
+  <div class="post__content">
+    <p><a href="https://github.com/rewfergu/todoredo/">TodoRedo repository on GitHub</a></p>
+<p>Created a repository on GitHub for the project and I&#39;ve started referring to it as TodoRedo, instead of just Angular Todo List.</p>
+
+  </div>
+</article>
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-12-23-CodePen-Demo.html">
+        CodePen Demo
+      </a>
+    </h1>
+    <div class="post__meta">Tue Dec 22 2015 18:00:00 GMT-0600 (CST)</div>
+  </header>
+  <div class="post__content">
+    <p><p data-height="622" data-theme-id="21445" data-slug-hash="wawNWN" data-default-tab="result" data-user="rewfergu" class='codepen'>See the Pen <a href='http://codepen.io/rewfergu/pen/wawNWN/'>localstorage todo list</a> by rewfergu (<a href='http://codepen.io/rewfergu'>@rewfergu</a>) on <a href='http://codepen.io'>CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Another version with Bootstrap this time instead of ionic.</p>
+
+  </div>
+</article>
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2015-02-12-screenshot.html">
+        Screenshot
+      </a>
+    </h1>
+    <div class="post__meta"></div>
+  </header>
+  <div class="post__content">
+    <figure>
+  <img src="https://s3.amazonaws.com/rewferguson.com/img/TodoRedo/todoredo-screenshot-577x1024.png" alt="Screenshot from my phone running the Angular + Ionic web app" />
+  <figcaption>
+    Screenshot from my phone running the Angular + Ionic web app
+  </figcaption>
+</figure>
 
   </div>
 </article>

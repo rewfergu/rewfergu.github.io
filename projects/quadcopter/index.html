@@ -94,13 +94,6 @@
       
 
       
-        <p>
-          <a class="project__link" href="">
-            <svg><use xlink:href="/img/icons.svg#icon-link"></use></svg>
-            
-          </a>
-        </p>
-      
 
       
         <ul class="project__tags">
@@ -117,45 +110,6 @@
       
     </header>
 
-    
-      
-      <article class="post">
-  <header class="post__header">
-    <h1 class="post__title">
-      <a href="posts/2016-02-11-nodeClaw.html">
-        nodeClaw
-      </a>
-    </h1>
-    <div class="post__meta">Wed Feb 10 2016 18:00:00 GMT-0600 (CST)</div>
-  </header>
-  <div class="post__content">
-    <video src="https://s3.amazonaws.com/rewferguson.com/img/Quadcopter/react_test.mp4" controls></video>
-
-<p>This is a simple experiment to communicate with servos over a node server.  Node is running an express server with a react ui, communication is then sent back to the server in real time using socket.io, then those instructions are sent to the servos using the Johnny Five framework.</p>
-<p><img src="https://s3.amazonaws.com/rewferguson.com/img/Quadcopter/nodeClaw-ui-01.png" alt="first node claw ui"></p>
-<p>You can use the UI slider to send a message to the servo. The range is 0 to 180 to reflect the degrees of the servos motion.</p>
-<p><a href="https://github.com/rewfergu/nodeClaw">https://github.com/rewfergu/nodeClaw</a></p>
-
-  </div>
-</article>
-    
-      
-      <article class="post">
-  <header class="post__header">
-    <h1 class="post__title">
-      <a href="posts/2016-02-17-salvaged-RC-parts.html">
-        salvaged RC parts
-      </a>
-    </h1>
-    <div class="post__meta">Tue Feb 16 2016 18:00:00 GMT-0600 (CST)</div>
-  </header>
-  <div class="post__content">
-    <p>I was able to salvage the transmitter, receiver, motor, speed controller, and servos from an old RC plane I found.  Still works. The whole setup is actually much simpler than I imagined.</p>
-<p>It does need lots of batteries, which I don&#39;t have, so I just pulled a couple AC adapters out of my AC adapter graveyard and wired the transmitter and receiver directly to them. The receiver worked with 5 volts and the transmitter with 12.</p>
-<video src="https://s3.amazonaws.com/rewferguson.com/img/Quadcopter/rc_test.mp4" controls></video>
-
-  </div>
-</article>
     
       
       <article class="post">
@@ -192,6 +146,45 @@
 <li>120 all the way left</li>
 </ul>
 <p>Since I only needed three real states to control the screen, I can group conditional statements to send socket.io messages.</p>
+
+  </div>
+</article>
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2016-02-17-salvaged-RC-parts.html">
+        salvaged RC parts
+      </a>
+    </h1>
+    <div class="post__meta">Tue Feb 16 2016 18:00:00 GMT-0600 (CST)</div>
+  </header>
+  <div class="post__content">
+    <p>I was able to salvage the transmitter, receiver, motor, speed controller, and servos from an old RC plane I found.  Still works. The whole setup is actually much simpler than I imagined.</p>
+<p>It does need lots of batteries, which I don&#39;t have, so I just pulled a couple AC adapters out of my AC adapter graveyard and wired the transmitter and receiver directly to them. The receiver worked with 5 volts and the transmitter with 12.</p>
+<video src="https://s3.amazonaws.com/rewferguson.com/img/Quadcopter/rc_test.mp4" controls></video>
+
+  </div>
+</article>
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2016-02-11-nodeClaw.html">
+        nodeClaw
+      </a>
+    </h1>
+    <div class="post__meta">Wed Feb 10 2016 18:00:00 GMT-0600 (CST)</div>
+  </header>
+  <div class="post__content">
+    <video src="https://s3.amazonaws.com/rewferguson.com/img/Quadcopter/react_test.mp4" controls></video>
+
+<p>This is a simple experiment to communicate with servos over a node server.  Node is running an express server with a react ui, communication is then sent back to the server in real time using socket.io, then those instructions are sent to the servos using the Johnny Five framework.</p>
+<p><img src="https://s3.amazonaws.com/rewferguson.com/img/Quadcopter/nodeClaw-ui-01.png" alt="first node claw ui"></p>
+<p>You can use the UI slider to send a message to the servo. The range is 0 to 180 to reflect the degrees of the servos motion.</p>
+<p><a href="https://github.com/rewfergu/nodeClaw">https://github.com/rewfergu/nodeClaw</a></p>
 
   </div>
 </article>

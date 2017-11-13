@@ -101,13 +101,6 @@
       
 
       
-        <p>
-          <a class="project__link" href="">
-            <svg><use xlink:href="/img/icons.svg#icon-link"></use></svg>
-            
-          </a>
-        </p>
-      
 
       
         <ul class="project__tags">
@@ -127,55 +120,14 @@
       <article class="post">
   <header class="post__header">
     <h1 class="post__title">
-      <a href="posts/2013-04-24-dollar-input-formatter.html">
-        Dollar Input Formatter
+      <a href="posts/2015-12-22-GitHub-Repo.html">
+        GitHub Repo
       </a>
     </h1>
-    <div class="post__meta"></div>
+    <div class="post__meta">Mon Dec 21 2015 18:00:00 GMT-0600 (CST)</div>
   </header>
   <div class="post__content">
-    <p>I needed a quick way to enter a dollar value into a mobile application.  The critical thing for me was being able to enter data as fast as possible, or the application wasn&#8217;t going to be useful.  I could see myself trying to enter info with one hand, probably on the go, and I didn&#8217;t want to hit even one extra button.  My ATMs have an auto format feature where you just start entering digits, and the machine formats the decimal for you, so 999 translates into 9.99.  Entering in an extra two digits on a keypad is easier for me than switching keyboard layouts and finding the period key.  What I mean is 9 might be faster than typing 900, but 499 is faster than 4.99. If that makes any sense.</p>
-<p><a href="https://github.com/rewfergu/dollarformat"><img class="alignnone  wp-image-467" alt="dollar formatter" src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/dollarFormat.png" width="419" height="260" /></a></p>
-<p><a href="https://github.com/rewfergu/dollarformat" target="_blank">https://github.com/rewfergu/dollarformat</a></p>
-<p>All that was really required was for javascript to look at the string of digits and put the decimal in the right spot before I save to the database.  There is a regular expression to check for keys other than numeric keys, but on an iPhone it wasn&#8217;t really necessary.  To bring up the super fast numeric keypad I just needed to add a pattern attribute to my input.</p>
-<pre><code>&lt;input id=&quot;addExpense&quot; type=&quot;text&quot; pattern=&quot;[0-9]*&quot; placeholder=&quot;0.00&quot; /&gt;
-</code></pre><p><a href="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/photo.png"><img class="alignnone  wp-image-468" alt="add transaction screen" src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/photo.png" width="448" height="672" /></a></p>
-
-  </div>
-</article>
-    
-      
-      <article class="post">
-  <header class="post__header">
-    <h1 class="post__title">
-      <a href="posts/2013-05-07-ultra-simple-pie-charts.html">
-        Ultra Simple Pie Charts
-      </a>
-    </h1>
-    <div class="post__meta"></div>
-  </header>
-  <div class="post__content">
-    <p>I needed a super simple way to create pie charts to represent percentages. I looked around at scripts, but it was just easier to write a simple canvas script.</p>
-<p><img src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/piecon.png" alt="pie chart"></p>
-<p><a href="https://github.com/rewfergu/piecon" title="piecon" target="_blank">PieCon</a></p>
-
-  </div>
-</article>
-    
-      
-      <article class="post">
-  <header class="post__header">
-    <h1 class="post__title">
-      <a href="posts/2014-04-16-hsl-level-indication.html">
-        HSL level indication
-      </a>
-    </h1>
-    <div class="post__meta"></div>
-  </header>
-  <div class="post__content">
-    <p><a href="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/hslLevels.png"><img class="alignnone size-large wp-image-597" src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/hslLevels-417x1024.png" alt="hslLevels" width="417" height="1024" /></a></p>
-<p>I needed a way to assign a color value to a percentage &#8211; 100% being perfect and 0% being lowest possible.  This wouldn&#8217;t work for red/green color blindness, so a printed text value would have to be used as a backup.</p>
-<!--more-->
+    <p><a href="https://github.com/rewfergu/budgetTracker">Budget Tracker Repository on GitHub</a></p>
 
   </div>
 </article>
@@ -203,14 +155,55 @@
       <article class="post">
   <header class="post__header">
     <h1 class="post__title">
-      <a href="posts/2015-12-22-GitHub-Repo.html">
-        GitHub Repo
+      <a href="posts/2014-04-16-hsl-level-indication.html">
+        HSL level indication
       </a>
     </h1>
-    <div class="post__meta">Mon Dec 21 2015 18:00:00 GMT-0600 (CST)</div>
+    <div class="post__meta"></div>
   </header>
   <div class="post__content">
-    <p><a href="https://github.com/rewfergu/budgetTracker">Budget Tracker Repository on GitHub</a></p>
+    <p><a href="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/hslLevels.png"><img class="alignnone size-large wp-image-597" src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/hslLevels-417x1024.png" alt="hslLevels" width="417" height="1024" /></a></p>
+<p>I needed a way to assign a color value to a percentage &#8211; 100% being perfect and 0% being lowest possible.  This wouldn&#8217;t work for red/green color blindness, so a printed text value would have to be used as a backup.</p>
+<!--more-->
+
+  </div>
+</article>
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2013-05-07-ultra-simple-pie-charts.html">
+        Ultra Simple Pie Charts
+      </a>
+    </h1>
+    <div class="post__meta"></div>
+  </header>
+  <div class="post__content">
+    <p>I needed a super simple way to create pie charts to represent percentages. I looked around at scripts, but it was just easier to write a simple canvas script.</p>
+<p><img src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/piecon.png" alt="pie chart"></p>
+<p><a href="https://github.com/rewfergu/piecon" title="piecon" target="_blank">PieCon</a></p>
+
+  </div>
+</article>
+    
+      
+      <article class="post">
+  <header class="post__header">
+    <h1 class="post__title">
+      <a href="posts/2013-04-24-dollar-input-formatter.html">
+        Dollar Input Formatter
+      </a>
+    </h1>
+    <div class="post__meta"></div>
+  </header>
+  <div class="post__content">
+    <p>I needed a quick way to enter a dollar value into a mobile application.  The critical thing for me was being able to enter data as fast as possible, or the application wasn&#8217;t going to be useful.  I could see myself trying to enter info with one hand, probably on the go, and I didn&#8217;t want to hit even one extra button.  My ATMs have an auto format feature where you just start entering digits, and the machine formats the decimal for you, so 999 translates into 9.99.  Entering in an extra two digits on a keypad is easier for me than switching keyboard layouts and finding the period key.  What I mean is 9 might be faster than typing 900, but 499 is faster than 4.99. If that makes any sense.</p>
+<p><a href="https://github.com/rewfergu/dollarformat"><img class="alignnone  wp-image-467" alt="dollar formatter" src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/dollarFormat.png" width="419" height="260" /></a></p>
+<p><a href="https://github.com/rewfergu/dollarformat" target="_blank">https://github.com/rewfergu/dollarformat</a></p>
+<p>All that was really required was for javascript to look at the string of digits and put the decimal in the right spot before I save to the database.  There is a regular expression to check for keys other than numeric keys, but on an iPhone it wasn&#8217;t really necessary.  To bring up the super fast numeric keypad I just needed to add a pattern attribute to my input.</p>
+<pre><code>&lt;input id=&quot;addExpense&quot; type=&quot;text&quot; pattern=&quot;[0-9]*&quot; placeholder=&quot;0.00&quot; /&gt;
+</code></pre><p><a href="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/photo.png"><img class="alignnone  wp-image-468" alt="add transaction screen" src="https://s3.amazonaws.com/rewferguson.com/img/Budget-Tracker/photo.png" width="448" height="672" /></a></p>
 
   </div>
 </article>
