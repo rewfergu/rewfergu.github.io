@@ -177,10 +177,6 @@ figure {
     .projectCategory__content {
       -webkit-column-count: 3;
       column-count: 3; } }
-  @media screen and (min-width: 90em) {
-    .projectCategory__content {
-      -webkit-column-count: 4;
-      column-count: 4; } }
 
 .projectCategory.hold .projectCategory__heading {
   background: #602020; }
