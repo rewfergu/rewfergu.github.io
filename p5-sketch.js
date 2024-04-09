@@ -19,6 +19,8 @@ var previousAnchor = 0;
 // 2 = bottomright
 // 3 = bottomleft
 
+console.log('p5 sketch is go');
+
 var updown = [0, 2];
 var leftright = [1, 3];
 
